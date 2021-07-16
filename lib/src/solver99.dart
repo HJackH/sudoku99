@@ -4,21 +4,21 @@ import 'dlx.dart';
 class Solver99 {
   /// sudoku size = 9x9
   /// board size = 10x10 (1-based)
-  static final int SZ = 10;
+  static final int sz = 10;
   DLX dlx = DLX();
 
   /// Get the row in the dlx.
   /// the constraint in [row][col] with [num]
-  int GetId(int row, int col, int num) {
+  int getId(int row, int col, int num) {
     return (row - 1) * 9 * 9 + (col - 1) * 9 + num;
   }
 
   /// Insert the constraint [row][col] with [num].
-  void Insert(int row, int col, int num) {
+  void insert(int row, int col, int num) {
     int dx = (row - 1) ~/ 3 + 1;
     int dy = (col - 1) ~/ 3 + 1;
     int room = (dx - 1) * 3 + dy;
-    int id = GetId(row, col, num);
+    int id = getId(row, col, num);
     int f1 = (row - 1) * 9 + num;
     int f2 = 81 + (col - 1) * 9 + num;
     int f3 = 81 * 2 + (room - 1) * 9 + num;
@@ -32,7 +32,7 @@ class Solver99 {
   /// Main function to solve the sudoku,
   /// [board] = 10x10(1-based)
   int run(List<List<int>> board) {
-    if (board.length != SZ || board[0].length != SZ) {
+    if (board.length != sz || board[0].length != sz) {
       return 0;
     }
 
@@ -43,10 +43,10 @@ class Solver99 {
         RangeError.checkValueInInterval(board[i][j], 0, 10);
 
         if (board[i][j] != 0) {
-          Insert(i, j, board[i][j]);
+          insert(i, j, board[i][j]);
         } else {
           for (int v = 1; v <= 9; v++) {
-            Insert(i, j, v);
+            insert(i, j, v);
           }
         }
       }

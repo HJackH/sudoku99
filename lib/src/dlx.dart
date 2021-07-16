@@ -2,8 +2,8 @@ import 'node.dart';
 
 /// Dancing Links data structure for solving sudoku(9 x 9)
 class DLX {
-  /// [MAXN] is maximum internal nodes in data structure.
-  static final int MAXN = 100000 + 10;
+  /// [maxn] is maximum internal nodes in data structure.
+  static final int maxn = 100000 + 10;
 
   /// dancing link size = [n] x [m],
   /// [tot] is internal nodes for now,
@@ -13,10 +13,10 @@ class DLX {
   /// [nodes] store the all nodes informations,
   /// nodes0 is the entry point (root node),
   /// Notices reference in List.
-  List<Node> nodes = List.generate(MAXN, (index) => Node());
+  List<Node> nodes = List.generate(maxn, (index) => Node());
 
   /// [stk] is a temporary storage for solving the sudoku.
-  List<int> stk = List.generate(MAXN, (index) => 0);
+  List<int> stk = List.generate(maxn, (index) => 0);
 
   /// Initialize data structure with size [r] x [c],
   /// creating and linking column nodes.
