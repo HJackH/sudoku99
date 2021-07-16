@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the DLX class from the sudoku99 library, for the Dart programming language.">
+  <title>DLX class - sudoku99 library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">sudoku99</a></li>
+    <li><a href="../sudoku99/sudoku99-library.html">sudoku99</a></li>
+    <li class="self-crumb">DLX class</li>
+  </ol>
+  <div class="self-name">DLX</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">DLX</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Dancing Links data structure for solving sudoku(9 x 9)</p>
+</section>
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="DLX" class="callable">
+          <span class="name"><a href="../sudoku99/DLX/DLX.html">DLX</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+           
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="ansd" class="property">
+  <span class="name"><a href="../sudoku99/DLX/ansd.html">ansd</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  dancing link size = <a href="../sudoku99/DLX/n.html">n</a> x <a href="../sudoku99/DLX/m.html">m</a>,
+<a href="../sudoku99/DLX/tot.html">tot</a> is internal nodes for now,
+<a href="../sudoku99/DLX/ansd.html">ansd</a> is the number of ans when solving the sudoku. 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="m" class="property">
+  <span class="name"><a href="../sudoku99/DLX/m.html">m</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  dancing link size = <a href="../sudoku99/DLX/n.html">n</a> x <a href="../sudoku99/DLX/m.html">m</a>,
+<a href="../sudoku99/DLX/tot.html">tot</a> is internal nodes for now,
+<a href="../sudoku99/DLX/ansd.html">ansd</a> is the number of ans when solving the sudoku. 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="n" class="property">
+  <span class="name"><a href="../sudoku99/DLX/n.html">n</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  dancing link size = <a href="../sudoku99/DLX/n.html">n</a> x <a href="../sudoku99/DLX/m.html">m</a>,
+<a href="../sudoku99/DLX/tot.html">tot</a> is internal nodes for now,
+<a href="../sudoku99/DLX/ansd.html">ansd</a> is the number of ans when solving the sudoku. 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="nodes" class="property">
+  <span class="name"><a href="../sudoku99/DLX/nodes.html">nodes</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../sudoku99/Node-class.html">Node</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  <a href="../sudoku99/DLX/nodes.html">nodes</a> store the all nodes informations,
+nodes0 is the entry point (root node),
+Notices reference in List. 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="stk" class="property">
+  <span class="name"><a href="../sudoku99/DLX/stk.html">stk</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  <a href="../sudoku99/DLX/stk.html">stk</a> is a temporary storage for solving the sudoku. 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="tot" class="property">
+  <span class="name"><a href="../sudoku99/DLX/tot.html">tot</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  dancing link size = <a href="../sudoku99/DLX/n.html">n</a> x <a href="../sudoku99/DLX/m.html">m</a>,
+<a href="../sudoku99/DLX/tot.html">tot</a> is internal nodes for now,
+<a href="../sudoku99/DLX/ansd.html">ansd</a> is the number of ans when solving the sudoku. 
+  <div class="features">read / write</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="dance" class="callable">
+  <span class="name"><a href="../sudoku99/DLX/dance.html">dance</a></span><span class="signature">(<wbr><span class="parameter" id="dance-param-dep"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dep</span>, </span><span class="parameter" id="dance-param-board"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">board</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  main function to solve the sudoku,
+<code>dep</code> = search steps,
+<code>board</code> = sudoku board(1-based, 10x10),
+init call = dance(0, board);
+return a integer for answer count. <a href="../sudoku99/DLX/dance.html">[...]</a>
+  
+
+</dd>
+
+        <dt id="init" class="callable">
+  <span class="name"><a href="../sudoku99/DLX/init.html">init</a></span><span class="signature">(<wbr><span class="parameter" id="init-param-r"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">r</span>, </span><span class="parameter" id="init-param-c"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">c</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Initialize data structure with size <code>r</code> x <code>c</code>,
+creating and linking column nodes. 
+  
+
+</dd>
+
+        <dt id="insert" class="callable">
+  <span class="name"><a href="../sudoku99/DLX/insert.html">insert</a></span><span class="signature">(<wbr><span class="parameter" id="insert-param-r"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">r</span>, </span><span class="parameter" id="insert-param-c"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">c</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Insert node at (<code>r</code>, <code>c</code>) 
+  
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="recover" class="callable">
+  <span class="name"><a href="../sudoku99/DLX/recover.html">recover</a></span><span class="signature">(<wbr><span class="parameter" id="recover-param-c"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">c</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Recover informations removed by <a href="../sudoku99/DLX/remove.html">remove(int c)</a>. 
+  
+
+</dd>
+
+        <dt id="remove" class="callable">
+  <span class="name"><a href="../sudoku99/DLX/remove.html">remove</a></span><span class="signature">(<wbr><span class="parameter" id="remove-param-c"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">c</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Remove column <code>c</code> and
+update all columns in rows in column <code>c</code>. 
+  
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="static-properties">
+      <h2>Static Properties</h2>
+
+      <dl class="properties">
+        <dt id="maxn" class="property">
+  <span class="name"><a href="../sudoku99/DLX/maxn.html">maxn</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../sudoku99/DLX/maxn.html">maxn</a> is maximum internal nodes in data structure. 
+  <div class="features">final</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">sudoku99</a></li>
+  <li><a href="../sudoku99/sudoku99-library.html">sudoku99</a></li>
+  <li class="self-crumb">DLX class</li>
+</ol>
+
+
+    <h5>sudoku99 library</h5>
+    <ol>
+  <li class="section-title"><a href="../sudoku99/sudoku99-library.html#classes">Classes</a></li>
+  <li><a href="../sudoku99/DLX-class.html">DLX</a></li>
+  <li><a href="../sudoku99/Node-class.html">Node</a></li>
+  <li><a href="../sudoku99/Solver99-class.html">Solver99</a></li>
+  <li><a href="../sudoku99/Util-class.html">Util</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../sudoku99/DLX-class.html#constructors">Constructors</a></li>
+    <li><a href="../sudoku99/DLX/DLX.html">DLX</a></li>
+
+
+    <li class="section-title">
+      <a href="../sudoku99/DLX-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../sudoku99/DLX/ansd.html">ansd</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a href="../sudoku99/DLX/m.html">m</a></li>
+    <li><a href="../sudoku99/DLX/n.html">n</a></li>
+    <li><a href="../sudoku99/DLX/nodes.html">nodes</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li><a href="../sudoku99/DLX/stk.html">stk</a></li>
+    <li><a href="../sudoku99/DLX/tot.html">tot</a></li>
+
+    <li class="section-title"><a href="../sudoku99/DLX-class.html#instance-methods">Methods</a></li>
+    <li><a href="../sudoku99/DLX/dance.html">dance</a></li>
+    <li><a href="../sudoku99/DLX/init.html">init</a></li>
+    <li><a href="../sudoku99/DLX/insert.html">insert</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../sudoku99/DLX/recover.html">recover</a></li>
+    <li><a href="../sudoku99/DLX/remove.html">remove</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../sudoku99/DLX-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+    <li class="section-title"><a href="../sudoku99/DLX-class.html#static-properties">Static properties</a></li>
+    <li><a href="../sudoku99/DLX/maxn.html">maxn</a></li>
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    sudoku99
+      0.0.1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
