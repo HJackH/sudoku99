@@ -1,14 +1,10 @@
 # sudoku99
 
-A new Flutter package project.
+a flutter package for solving sudoku
 
-## Getting Started
-
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Reference
+* Donald E. Knuth : https://arxiv.org/pdf/cs/0011047.pdf
+* KTH : https://www.kth.se/social/files/58861771f276547fe1dbf8d1/HLaestanderMHarrysson_dkand14.pdf
+* zendoku : https://garethrees.org/2007/06/10/zendoku-generation/
+* Exact cover problem(n-queen, sudoku) wiki : https://en.wikipedia.org/wiki/Exact_cover
+* Sudoku exact cover matrix : https://www.stolaf.edu/people/hansonr/sudoku/exactcovermatrix.htm
