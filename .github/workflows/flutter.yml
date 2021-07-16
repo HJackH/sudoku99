@@ -45,3 +45,42 @@ jobs:
 
       - name: Run tests
         run: flutter test
+        
+        
+  build-doc:
+    needs: test
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+      
+      - name: Setup java
+        uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+          
+      - name: Install and set Flutter version
+        uses: subosito/flutter-action@v1
+        with:
+          flutter-version: '2.2.3'
+          
+      - name: Install dartdoc
+        run: flutter pub global activate dartdoc
+          
+      - name: Restore packages
+        run: flutter pub get
+        
+      - name: Build doc
+        run: dartdoc
+        
+      - name: Move docs
+        run: |
+          git checkout gh-pages
+          mv doc/api/* ./
+          
+      - name: Push documentation
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: auto build documentation
