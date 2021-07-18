@@ -80,7 +80,8 @@ jobs:
       - name: Move docs
         run: |
           git checkout gh-pages
-          mv doc/api/* ./
+          cp -r doc/api/* ./
+          rm -r doc/
           mv __404error.html 404.html
           
       - name: Push documentation
